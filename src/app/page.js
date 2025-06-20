@@ -1,13 +1,19 @@
+  import { useState} from "react";
   export default function Home()
   {
-    const name="Ameer"
-    return(
-      <main>
-      <div>
-        <h1> Hello {name}!</h1>
-        <p>Welcome to your app {name}</p>
+    const[message, setMessage]= useState("Hello Fatty!");
+    const handleClick= () => {
+      setMessage("You Clicked the button fattu!");    
+  };
+  return(
+    <div>
+      <h1>
+        {message}
+      </h1>
+      <button onClick={handleClick}>Click Me
 
+      </button>
       </div>
-      </main>
-    );  
+
+  );
 }
