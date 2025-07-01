@@ -2,7 +2,7 @@
   import { useState} from "react";
   export default function Home()
   {
-    const[message, setMessage]= useState("Hello Fatty!");
+    const[message, setMessage]= useState("Hello Hamza!");
     const [buttonVisible, setButtonVisible] = useState(true);   
     
     const handleClick= () => {
