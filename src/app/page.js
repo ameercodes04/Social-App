@@ -10,7 +10,7 @@ export default function Home()
    {name: "Hamza", date: "02-11-2005"}
   ]
   );
-  const[opening , setopening] = useState("Welcome to your App!");
+  const[opening , setopening] = useState("Welcome SHAZI BHAI!");
   const[vbutton, setbutton] = useState(true);
   const handleClick= ()=>
   {
@@ -31,7 +31,7 @@ export default function Home()
     </ul>
       )}
       {vbutton && (
-        <button onClick={handleClick}>Show Birthday Countdown</button>
+        <button onClick={handleClick}>Click to See Birthdays SHAZI BHAI</button>
       )}
     </div>
   );
