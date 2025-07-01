@@ -9,15 +9,14 @@
       setMessage("You Clicked the button fattu!"); 
       setButtonVisible(false);
   };
-  return(
+  return (
     <div>
-      <h1>
-        {message}
-      </h1>
-      <button onClick={handleClick}>Click Me
-
-      </button>
-      </div>
-
+      <h1>{message}</h1>
+  
+      {buttonVisible && (
+        <button onClick={handleClick}>Click Me</button>
+      )}
+    </div>
   );
+  
 }
