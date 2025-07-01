@@ -3,8 +3,11 @@
   export default function Home()
   {
     const[message, setMessage]= useState("Hello Fatty!");
+    const [buttonVisible, setButtonVisible] = useState(true);   
+    
     const handleClick= () => {
-      setMessage("You Clicked the button fattu!");    
+      setMessage("You Clicked the button fattu!"); 
+      setButtonVisible(false);
   };
   return(
     <div>
