@@ -21,6 +21,7 @@ export default function Home()
   return (
     <div>
       <h1>{opening}</h1>
+      {!vbutton && (
       <ul>               
       {display.map((person, index) => (  
         <li key={index}>
@@ -28,6 +29,7 @@ export default function Home()
         </li>
       ))}
     </ul>
+      )}
       {vbutton && (
         <button onClick={handleClick}>Show Birthday Countdown</button>
       )}
