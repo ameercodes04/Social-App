@@ -45,7 +45,9 @@ export default function Home() {
               <li
                 key={index}
                 >
-                🎂 {person.name}'s birthday is in{' '}
+                🎂 {`${person.name}'s birthday is in ${getDays(person.date)} days`}
+
+
                 {getDays(person.date)}
                 
                 days
