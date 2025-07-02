@@ -10,12 +10,18 @@ export default function Home() {
 
   const [opening, setopening] = useState('Hi! Welcome to your app');
   const [vbutton, setbutton] = useState(true);
+  const [nbutton, setnbutton] = useState(true);
 
   const handleClick = () => {
     setopening('Birthdays Countdown:');
     setbutton(false);
+    setnbutton(false);
   };
-
+  const handlenClick = () => {
+    setopening('Notifications:');
+    setbutton(false);
+    setnbutton(false);
+  };
   function getDays(date) {
     const today = new Date();
     const thisYear = today.getFullYear();
@@ -38,7 +44,7 @@ export default function Home() {
         {opening}
       </h1>
 
-      {!vbutton && (
+      {!vbutton && !nbutton &&(
         <div className="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-2xl shadow-inner w-full max-w-md space-y-4">
           <ul className="space-y-3">
             {display.map((person, index) => (
@@ -58,9 +64,19 @@ export default function Home() {
           onClick={handleClick}
           className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition duration-300 text-lg animate-pulse"
         >
-          Click to See Birthdays SHAZI BHAI
+          Birthday Countdowns
         </button>
       )}
+      {nbutton && (
+        <button
+          onClick={handleClick}
+          className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition duration-300 text-lg animate-pulse"
+        >
+          Notifications
+        </button>
+      )}
+
     </div>
+    
   );
 }
