@@ -44,7 +44,7 @@ export default function Home() {
         {opening}
       </h1>
 
-      {!vbutton && !nbutton &&(
+      {!vbutton && (
         <div className="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-2xl shadow-inner w-full max-w-md space-y-4">
           <ul className="space-y-3">
             {display.map((person, index) => (
