@@ -44,7 +44,7 @@ export default function Home() {
             {display.map((person, index) => (
               <li
                 key={index}
-                className="text-lg font-medium text-gray-100 border-b border-gray-700 pb-2"
+                className="text-lg font-semibold text-black bg-white rounded-md p-2"
               >
                 🎂 {`${person.name}'s birthday is in ${getDays(person.date)} days`}
               </li>
