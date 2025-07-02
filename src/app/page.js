@@ -15,11 +15,11 @@ export default function Home() {
   const handleClick = () => {
     setopening('Birthdays Countdown:');
     setbutton(false);
-    setnbutton(false);
+    setnbutton(true);
   };
   const handlenClick = () => {
     setopening('Notifications:');
-    setbutton(false);
+    setbutton(true);
     setnbutton(false);
   };
   function getDays(date) {
