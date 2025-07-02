@@ -33,23 +33,21 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center p-6 space-y-6 font-sans">
-      <h1 className="text-4xl font-extrabold tracking-wide text-pink-500 drop-shadow-lg">
-        {opening}
+    <div >
+      <h1 >
+          {opening}
       </h1>
 
       {!vbutton && (
-        <div className="bg-white bg-opacity-5 backdrop-blur-lg p-6 rounded-2xl shadow-inner w-full max-w-md space-y-4">
-          <ul className="space-y-3">
+        <div >
+          <ul >
             {display.map((person, index) => (
               <li
                 key={index}
-                className="text-lg font-medium text-gray-100 border-b border-gray-700 pb-2"
-              >
+                >
                 🎂 {person.name}'s birthday is in{' '}
-                <span className="text-pink-400 font-semibold">
-                  {getDays(person.date)}
-                </span>{' '}
+                {getDays(person.date)}
+                
                 days
               </li>
             ))}
@@ -60,7 +58,7 @@ export default function Home() {
       {vbutton && (
         <button
           onClick={handleClick}
-          className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition duration-300 text-lg animate-pulse"
+          
         >
           Click to See Birthdays SHAZI BHAI
         </button>
