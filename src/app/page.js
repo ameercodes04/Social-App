@@ -69,7 +69,7 @@ export default function Home() {
       )}
       {nbutton && (
         <button
-          onClick={handleClick}
+          onClick={handlenClick}
           className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition duration-300 text-lg animate-pulse"
         >
           Notifications
